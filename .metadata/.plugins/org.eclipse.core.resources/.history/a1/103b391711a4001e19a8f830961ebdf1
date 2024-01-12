@@ -1,0 +1,5 @@
+package com.project.Quote.model;
+
+public class Quote {
+
+}

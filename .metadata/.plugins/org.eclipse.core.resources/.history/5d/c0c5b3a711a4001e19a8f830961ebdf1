@@ -1,0 +1,16 @@
+package com.project.Quote.model;
+
+import org.hibernate.annotations.ManyToAny;
+
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+
+public class Quote {
+	private int qid;
+	private String quote_id;
+	private String quote_name;
+	private String quote_owner;
+	@ManyToOne
+	@JoinColumn(name = "customer_id")
+	private CustomerRegister customer;
+}
